@@ -11,6 +11,7 @@ import { TagsModule } from 'src/modules/tags/tags.rest.module';
 import { UserModule } from 'src/modules/user/user.rest.module';
 import { WishListModule } from 'src/modules/wishlist/wishlist.rest.module';
 import { PaymentModule } from 'src/modules/payment/payment.rest.module';
+import { SSLModule } from 'src/modules/sslcommerce/ssl.rest.module';
 
 export const ResolveRestModule = () => {
   return [
@@ -26,6 +27,7 @@ export const ResolveRestModule = () => {
     WishListModule,
     OrderModule,
     TagsModule,
-    PaymentModule
+    // PaymentModule
+    SSLModule
   ];
 };
