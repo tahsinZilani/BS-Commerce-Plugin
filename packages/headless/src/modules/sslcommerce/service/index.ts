@@ -38,6 +38,21 @@ export class SSLPaymentGatewayService {
   }
 
   async notificationHandler(body: any) {
+    //call validation api
+    // const response = await fetch(
+    //   `https://sandbox.sslcommerz.com/validator/api/validationserverAPI.php?val_id=${body.val_id}&store_id=${store_id}&store_passwd=${store_passwd}&v=1&format=json`,
+    //   {
+    //     method: 'POST'
+    //   });
+    //   const resJson = await response.json();
+    //   if(resJson.status === 'INVALID_TRANSACTION') 
+    //   {
+        //return error or save to db as unsuccesssful transaction
+    //  }
+      //implemnt security check and then save to db if status is VALID
+      //Track your order by transaction ID and check it in your database for existance
+      //Must validate amount and incoming amount from your Database
+      //Also check the currency type to avoid frauds
     return body;
   }
 }

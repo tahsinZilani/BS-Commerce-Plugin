@@ -9,7 +9,7 @@ let post_body: any = {
     success_url: "http://localhost:3000/api/success-payment",
     fail_url: "http://localhost:3000/api/failure-payment",
     cancel_url: "http://localhost:3000/api/cancel-payment",
-    ipn_url: "http://localhost:3000/api/cancel-payment",
+    ipn_url: "http://localhost:3000/api/notification",
     emi_option: 0,
     cus_name: "tahsin",
     cus_email: "safasadaf3@gmail.com",
